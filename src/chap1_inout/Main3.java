@@ -1,4 +1,4 @@
-package inout_1;
+package chap1_inout;
 
 public class Main3
 {
