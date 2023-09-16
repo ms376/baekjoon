@@ -22,5 +22,6 @@ public class Main4
 		}else {
 			System.out.println("3");
 		}
+		sc.close();
 	}
 }

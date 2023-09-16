@@ -9,5 +9,6 @@ public class Main2 {
         long b = sc.nextLong();
         long c = sc.nextLong();
         System.out.println(a+b+c);
+        sc.close();
     }
 }
