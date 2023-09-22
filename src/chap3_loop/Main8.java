@@ -2,7 +2,7 @@ package chap3_loop;
 
 import java.util.Scanner;
 
-public class Main7 {
+public class Main8 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class Main7 {
 		for (int i = 0; i < T; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
-			System.out.println("Case #"+(i+1)+": "+(a+b));
+			System.out.println("Case #"+(i+1)+": "+a+" + "+b+" = "+(a+b));
 		}
 		sc.close();
 	}
