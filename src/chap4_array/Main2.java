@@ -2,6 +2,7 @@ package chap4_array;
 
 import java.util.Scanner;
 
+
 public class Main2
 {
 
@@ -22,6 +23,7 @@ public class Main2
 				System.out.print(arr[i]+" ");
 			}
 		}
+		sc.close();
 	}
 
 }

@@ -7,25 +7,31 @@ public class Main6
 
 	public static void main(String[] args)
 	{
-		//배열을 정의하고,횟수를받아서 if, 배열에 추가, 그리고 찾
+
 		Scanner sc = new Scanner(System.in);
-		int N =sc.nextInt();
-		int[] arr = new int[N];
-		for (int i = 0; i < N; i++) {
+		int N = sc.nextInt();
+		int M = sc.nextInt();
+		int G = 0;
+		int Ba[] = new int[N];
+		
+		 for(int i = 0; i < Ba.length; i++) {
+	            Ba[i] = i + 1;                    
+	        }
+		for (int i = 0; i < M; i++)
+		{
+			int a = sc.nextInt();
 			int b = sc.nextInt();
-			arr[i]=b;
+			G = Ba[a - 1];
+			Ba[a - 1] = Ba[b - 1];
+			Ba[b - 1] = G;
 		}
-		int max = arr[0];
-		int min = arr[0];
-		for (int i = 1; i < arr.length; i++) {
-			if (arr[i]>max) {
-				max = arr[i];
-			}
-			if (arr[i] < min) {
-				min = arr[i];
-			}
+		for (int c = 0; c < Ba.length; c++)
+		{
+			System.out.print(Ba[c] + " ");
 		}
-		System.out.print(min+" "+max);
+		sc.close();
 	}
 
 }
+// 배열의수 = N
+// 시도횟수 = M

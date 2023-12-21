@@ -7,25 +7,26 @@ public class Main4
 
 	public static void main(String[] args)
 	{
-		//배열을 정의하고,횟수를받아서 if, 배열에 추가, 그리고 찾
 		Scanner sc = new Scanner(System.in);
-		int N =sc.nextInt();
-		int[] arr = new int[N];
-		for (int i = 0; i < N; i++) {
-			int b = sc.nextInt();
-			arr[i]=b;
+		int[] arr = new int[9];
+		for (int i = 0; i < arr.length; i++)
+		{
+			arr[i] = sc.nextInt();
 		}
-		int max = arr[0];
-		int min = arr[0];
-		for (int i = 1; i < arr.length; i++) {
-			if (arr[i]>max) {
-				max = arr[i];
-			}
-			if (arr[i] < min) {
-				min = arr[i];
-			}
-		}
-		System.out.print(min+" "+max);
-	}
+		int co=0;
+		int max = 0;
+		int count = 0;
 
+		for (int ar : arr)
+		{
+			co++;
+			if (ar > max)
+			{
+				max = ar;
+				count = co;
+			}
+		}
+		System.out.println(max+"\n"+count);
+		sc.close();
+	}
 }

@@ -26,6 +26,7 @@ public class Main8
 			}
 		}
 		System.out.print(min+" "+max);
+		sc.close();
 	}
 
 }
